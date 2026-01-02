@@ -1,5 +1,7 @@
 #include "buffer.h"
 
+
+
 void buffer_init(buffer_t *buf)
 {
     buf->head = 0;
