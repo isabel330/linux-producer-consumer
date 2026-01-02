@@ -1,0 +1,10 @@
+# compiled binaries
+a.out
+app
+
+# keys / private files
+home
+home.pub
+
+# object files
+*.o
