@@ -5,6 +5,7 @@
 
 extern buffer_t buffer;
 extern time_t last_consume_time;
+extern volatile int running;
 
 void* consumer(void* arg)
 {
