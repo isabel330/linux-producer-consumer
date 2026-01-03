@@ -3,6 +3,8 @@
 #include "producer.h"
 #include "buffer.h"
 
+void log_info(const char *fmt, ...);
+
 extern volatile int running;
 extern buffer_t buffer;
 extern time_t last_consume_time;
