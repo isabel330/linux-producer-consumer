@@ -11,9 +11,7 @@ The project demonstrates thread synchronization, condition variables, thread-saf
 - Watchdog thread to detect stalled consumer
 - Graceful shutdown support
 
-##Build and run
-
-## Build
+## Build and run
 ```bash
 gcc src/*.c -Iinclude -pthread -o app
 ./app
