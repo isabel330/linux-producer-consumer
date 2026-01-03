@@ -3,6 +3,8 @@
 #include "consumer.h"
 #include "buffer.h"
 
+void log_info(const char *fmt, ...);
+
 extern buffer_t buffer;
 extern time_t last_consume_time;
 extern volatile int running;
