@@ -1,7 +1,19 @@
-# Multithreaded Producer–Consumer System (Linux, C)
+# Linux Producer–Consumer System (pthread)
 
-This project implements a classic producer–consumer system using POSIX threads,
-mutexes, and condition variables.
+A multithreaded producer–consumer system implemented in C on Linux using POSIX threads.  
+The project demonstrates thread synchronization, condition variables, thread-safe logging, and watchdog supervision.
 
-The goal is to explore concurrency, synchronisation, and blocking semantics in
-Linux user space, and to relate these concepts to RTOS-based embedded systems.
+## Features
+- Producer–consumer model with bounded buffer
+- POSIX threads (`pthread`)
+- Mutex + condition variable synchronization
+- Thread-safe logger with timestamps
+- Watchdog thread to detect stalled consumer
+- Graceful shutdown support
+
+##Build and run
+
+## Build
+```bash
+gcc src/*.c -Iinclude -pthread -o app
+./app
