@@ -1,6 +1,7 @@
 #include <time.h>
 #include <unistd.h>
 #include "watchdog.h"
+void log_error(const char *fmt, ...);
 
 extern volatile int running;
 extern time_t last_consume_time;
@@ -18,3 +19,4 @@ void* watchdog(void* arg)
     }
     return NULL;
 }
+
