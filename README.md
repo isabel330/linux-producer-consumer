@@ -15,3 +15,14 @@ The project demonstrates thread synchronization, condition variables, thread-saf
 ```bash
 gcc src/*.c -Iinclude -pthread -o app
 ./app
+```
+
+## Example run
+```text
+[2026-01-03 15:33:34] [INFO] Produced: 0
+[2026-01-03 15:33:34] [INFO] Consumed: 0
+[2026-01-03 15:33:35] [INFO] Produced: 1
+[2026-01-03 15:33:36] [INFO] Consumed: 1
+[2026-01-03 15:33:36] [INFO] Produced: 2
+[2026-01-03 15:33:37] [INFO] Produced: 3
+```
