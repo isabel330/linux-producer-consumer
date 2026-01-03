@@ -3,7 +3,9 @@
 #include "producer.h"
 #include "buffer.h"
 
+extern volatile int running;
 extern buffer_t buffer;
+extern time_t last_consume_time;
 
 void* producer(void* arg)
 {
